@@ -9,11 +9,11 @@ Então, essa API, foi pensada, a facilitar e trazer uma flexibilidade e um engaj
 
 
 tecnologias usadas:
-JAVA 11
-SPRIG BOOT
-JWT
-BANCO DE DADOS - MARIA DB
-HIBERNATE
+JAVA 11,
+SPRIG BOOT,
+JWT,
+BD-MARIA DB,
+HIBERNATE,
 
 
 Foi um projeto onde fui mentorado por uma pessoa (Lilian), com o intuito de usar meus conhecimento adquiridos durante minha jornada em JAVA.
