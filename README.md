@@ -13,7 +13,7 @@ JAVA 11,
 SPRIG BOOT,
 JWT,
 BD-MARIA DB,
-HIBERNATE,
+JUNIT,
 
 
 Foi um projeto onde fui mentorado por uma pessoa (Lilian), com o intuito de usar meus conhecimento adquiridos durante minha jornada em JAVA.
