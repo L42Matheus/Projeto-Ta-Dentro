@@ -16,6 +16,8 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "indicacao")
+@NoArgsConstructor
+@Data
 public class Indicacao {
 
     @Id
@@ -39,70 +41,4 @@ public class Indicacao {
     @ManyToOne
     private Colaborador colaborador;
 
-    public Indicacao() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public LocalDate getDataDaContratacao() {
-        return dataDaContratacao;
-    }
-
-    public void setDataDaContratacao(LocalDate dataDaContratacao) {
-        this.dataDaContratacao = dataDaContratacao;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public PerfilDeSituacao getSituacao() {
-        return situacao;
-    }
-
-    public void setSituacao(PerfilDeSituacao situacao) {
-        this.situacao = situacao;
-    }
-
-    public Colaborador getColaborador() {
-        return colaborador;
-    }
-
-    public void setColaborador(Colaborador colaborador) {
-        this.colaborador = colaborador;
-    }
-
-    public LocalDate getDataDeCadastro() {
-        return dataDeCadastro;
-    }
-
-    public void setDataDeCadastro(LocalDate dataDeCadastro) {
-        this.dataDeCadastro = dataDeCadastro;
-    }
 }

@@ -70,7 +70,6 @@ public class ColaboradorService {
 
     }
 
-    //Metódo para buscar colaborador por Usuario
     public Colaborador buscarColaboradorPorUsuario(Usuario usuario){
         Optional<Colaborador> colaboradorOptional = colaboradorRepository.findByLoginUsuario(usuario);
 

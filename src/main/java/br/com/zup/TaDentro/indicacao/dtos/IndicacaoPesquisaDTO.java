@@ -1,28 +1,16 @@
 package br.com.zup.TaDentro.indicacao.dtos;
 
-import java.time.LocalDate;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+@Data
+@NoArgsConstructor
 public class IndicacaoPesquisaDTO {
 
     private LocalDate dataInicial;
     private LocalDate dataFinal;
 
-    public IndicacaoPesquisaDTO() {
-    }
 
-    public LocalDate getDataInicial() {
-        return dataInicial;
-    }
 
-    public void setDataInicial(LocalDate dataInicial) {
-        this.dataInicial = dataInicial;
-    }
-
-    public LocalDate getDataFinal() {
-        return dataFinal;
-    }
-
-    public void setDataFinal(LocalDate dataFinal) {
-        this.dataFinal = dataFinal;
-    }
 }

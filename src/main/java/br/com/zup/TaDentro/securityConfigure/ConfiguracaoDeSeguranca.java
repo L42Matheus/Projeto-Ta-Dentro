@@ -69,7 +69,8 @@ public class ConfiguracaoDeSeguranca extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userDetailsService).passwordEncoder(bCryptPasswordEncoder());
     }
 
-    @Bean //gerador de cryptografia - deve ser sempre o mesmo, por isso utiliza-se o bean
+    //gerador de cryptografia - deve ser sempre o mesmo, por isso utiliza-se o bean
+    @Bean
     BCryptPasswordEncoder bCryptPasswordEncoder(){
         return new BCryptPasswordEncoder();
     }

@@ -1,24 +1,21 @@
 package br.com.zup.TaDentro.jwt;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
+@AllArgsConstructor
+@Data
 public class UsuarioLogin implements UserDetails {
 
     private int id;
     private String email;
     private String senha;
 
-    public UsuarioLogin() {
-    }
-
-    public UsuarioLogin(int id, String email, String senha) {
-        this.id = id;
-        this.email = email;
-        this.senha = senha;
-    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -56,27 +53,5 @@ public class UsuarioLogin implements UserDetails {
     }
 
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
 }

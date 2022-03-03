@@ -24,7 +24,7 @@ public class UsuarioService {
     @Autowired
     private ColaboradorService colaboradorService;
 
-    //Usuário salvo
+
     public Usuario salvarUsuario(Usuario usuario){
         usuarioDuplicado(usuario.getEmail());
         String encode = bCryptPasswordEncoder.encode(usuario.getSenha());
@@ -32,27 +32,27 @@ public class UsuarioService {
         return repository.save(usuario);
     }
 
-    //Exibir Usuário cadastrado
+
     public List<Usuario> exibirUsuario(){
         return (List<Usuario>) repository.findAll();
     }
 
-    //PesquisaUsuario
+
     public Usuario encontrarUsuario(int id){
         return repository.findById(id).orElseThrow(() -> new MensagemErroUsuario("Usuário não encontrado"));
     }
 
-    //Pesquisar Usuário Por Email.
+
     public Usuario encontrarUsuarioPorEmail(String email){
         return repository.findByEmail(email).orElseThrow(() -> new MensagemErroUsuario("Usuário não encontrado"));
     }
 
-    //Deletar Usuário
+
     public void deletarUsuario(int id){
         repository.delete(encontrarUsuario(id));
     }
 
-    //Verificar se o Usuário é duplicado.
+
     public void usuarioDuplicado(String email){
 
        Optional<Usuario> usuario =  repository.findByEmail(email);
@@ -61,7 +61,7 @@ public class UsuarioService {
         }
     }
 
-    //Metódo para atualizar usuario.
+
     public void atualizarUsuario(Usuario usuario){
         Usuario usuarioSalva = encontrarUsuarioPorEmail(usuario.getEmail());
 

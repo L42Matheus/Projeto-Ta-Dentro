@@ -30,7 +30,7 @@ public class FormularioService {
         this.indicacaoService = indicacaoService;
     }
 
-    //Metódo formulario
+
     public List<Indicacao> pesquisaPorDataESituacao(String email, String dataInicial, String dataFinal, String situacao){
 
         Usuario usuario = usuarioService.encontrarUsuarioPorEmail(email);

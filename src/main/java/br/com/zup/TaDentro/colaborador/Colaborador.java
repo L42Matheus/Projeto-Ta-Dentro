@@ -3,6 +3,9 @@ package br.com.zup.TaDentro.colaborador;
 import br.com.zup.TaDentro.Usuario.Usuario;
 import br.com.zup.TaDentro.enums.Cargo;
 import br.com.zup.TaDentro.indicacao.Indicacao;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.br.CPF;
 
@@ -15,6 +18,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "colaborador")
+@NoArgsConstructor
+@Data
 public class Colaborador {
 
     @Id
@@ -33,70 +38,11 @@ public class Colaborador {
     @NotNull
     private LocalDate dataContratacao;
 
-
-
     @OneToOne
 //    @JoinColumn(name = "id_usuario")
     private Usuario loginUsuario;
     @OneToMany(mappedBy = "colaborador")
     private List<Indicacao> listDeIndicacao;
 
-    public Colaborador() {
-    }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public Cargo getCargo() {
-        return cargo;
-    }
-
-    public void setCargo(Cargo cargo) {
-        this.cargo = cargo;
-    }
-
-    public LocalDate getDataContratacao() {
-        return dataContratacao;
-    }
-
-    public void setDataContratacao(LocalDate dataContratacao) {
-        this.dataContratacao = dataContratacao;
-    }
-
-    public Usuario getLoginUsuario() {
-        return loginUsuario;
-    }
-
-    public void setLoginUsuario(Usuario loginUsuario) {
-        this.loginUsuario = loginUsuario;
-    }
-
-    public List<Indicacao> getListDeIndicacao() {
-        return listDeIndicacao;
-    }
-
-    public void setListDeIndicacao(List<Indicacao> listDeIndicacao) {
-        this.listDeIndicacao = listDeIndicacao;
-    }
 }
