@@ -1,5 +1,9 @@
 package br.com.zup.TaDentro.enums;
 
+
+import lombok.Getter;
+
+@Getter
 public enum Cargo {
 
     DEV_JR,
