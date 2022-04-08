@@ -6,7 +6,7 @@ Passo a passo para rodar o micro-serviço.
 	
 	Usando docker você vai fazer o pull do banco de dados. Aqui estou usando mariaDB
 	
-	-> docker pull mariadb<mark>Highlighted</mark>
+	-> docker pull mariadb
 	
 	Subir seu container
 	
