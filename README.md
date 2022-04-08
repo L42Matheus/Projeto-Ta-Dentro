@@ -17,3 +17,7 @@ JUNIT,
 
 
 Foi um projeto onde fui mentorado por uma pessoa (Lilian), com o intuito de usar meus conhecimento adquiridos durante minha jornada em JAVA.
+
+Documentação para rodar o micro-serviço
+
+https://github.com/L42Matheus/Projeto-Ta-Dentro/blob/melhorias-taDentro/Start-Micro-Service.md
