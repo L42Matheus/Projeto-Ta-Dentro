@@ -4,8 +4,8 @@ O projeto tá dentro foi criado com o intuito de ajudar os RH's a filtrar o anda
 
 
 Um exemplo, sabemos que atualmente, podemos indicar amigos, familiares, colegas de outras empresas, para trabalhar conosco.
-Porém, podemos ver que muitos colabores, sente uma dor, e essa dor e minha, para verificar o andamento daquele colega que indicamos.
-Então, essa API, foi pensada, a facilitar e trazer uma flexibilidade e um engajamento maior de colabores para sua empresa.
+Porém, podemos ver que muitos colaboradores, sente uma dor, e essa dor e minha, para verificar o andamento daquele colega que indicamos.
+Então, essa API, foi pensada a facilitar e trazer uma flexibilidade e um engajamento maior de colabores para sua empresa.
 
 
 tecnologias usadas:
