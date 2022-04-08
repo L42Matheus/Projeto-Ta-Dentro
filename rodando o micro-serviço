@@ -1,0 +1,32 @@
+Passo a passo para rodar o micro-serviço.
+
+
+Usando docker você vai fazer o pull do banco de dados. Aqui estou usando mariaDB
+
+-> docker pull mariadb
+
+Subir seu container
+
+-> docker run -p 3306:3306 —name banco-local -e MYSQL_ROOT_PASSWORD=root -d mariadb
+
+Ao subir seu container, acesse pelo CLI do docker, irá abrir um terminal.
+
+-> acesse o mariadb
+
+mysql -u root -p -h localhost
+
+SHOW DATABASES;
+
+CREATE DATABASE bancoLocal;
+
+
+Você precisará de alguma view para conectar o banco de dados.
+Como uso macbook aqui estou usando Sequel pro;
+
+Onde adicionamos a porta 3306
+Adicionamos o servidor padrão 127.0.0.1 ou localhost
+senha: root
+usuario: root
+
+
+Ao conectar pode subir o micro-serviço
