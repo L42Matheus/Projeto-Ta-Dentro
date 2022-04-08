@@ -37,7 +37,6 @@ public class UsuarioServiceTest {
     @Test
     public void savedUser() {
 
-
         Usuario user = new Usuario();
         user.setSenha("12345");
         Mockito.when(bCryptPasswordEncoder.encode(user.getSenha())).thenReturn("12345");
